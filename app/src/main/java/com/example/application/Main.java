@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class Main extends AppCompatActivity {
     Button btn_quitter,btn_reinitialiser;
@@ -17,7 +18,7 @@ public class Main extends AppCompatActivity {
         View vw=this.getWindow().getDecorView();
         vw.setBackgroundColor(color);
     }
-
+    TextView tv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +29,7 @@ public class Main extends AppCompatActivity {
         color1=findViewById(R.id.white);
         color2=findViewById(R.id.blue);
         color3=findViewById(R.id.black);
-
+        tv=findViewById(R.id.tview);
         btn_quitter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,6 +42,7 @@ public class Main extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Number.setText(null);
+                tv.setText("? * 1 =?\n ? * 2 =?\n ? * 3 =?\n ? * 4 =?\n ? * 5 =?\n ? * 6 =?\n ? * 7 =?\n ? * 8 =?\n ? * 9 =?\n ? * 10 =?");
             }
         });
 
