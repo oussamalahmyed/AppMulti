@@ -47,15 +47,9 @@
         app:layout_constraintTop_toBottomOf="@+id/btnreinitialiser" />
 
     <TextView
-<<<<<<< HEAD
-        android:id="@+id/textView"
-        android:layout_width="300dp"
-        android:layout_height="320dp"
-=======
         android:id="@+id/tview"
         android:layout_width="305dp"
         android:layout_height="310dp"
->>>>>>> master
         android:text="\ ? * 1 =\?\n \? * 2 =\?\n \? * 3 =\?\n \? * 4 =\?\n \? * 5 =\?\n \? * 6 =\?\n \? * 7 =\?\n \? * 8 =\?\n \? * 9 =\?\n \? * 10 =\?"
         android:textSize="60px"
         android:gravity="center"
