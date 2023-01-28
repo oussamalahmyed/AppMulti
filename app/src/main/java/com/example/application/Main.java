@@ -13,12 +13,12 @@ public class Main extends AppCompatActivity {
     Button btn_quitter,btn_reinitialiser;
     EditText Number;
     Button color1,color2,color3;
+    TextView tv;
 
     public void setMyScreenColor(int color){
         View vw=this.getWindow().getDecorView();
         vw.setBackgroundColor(color);
     }
-    TextView tv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
